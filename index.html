@@ -89,17 +89,15 @@
         <!-- Video / VSL Placeholder -->
         <div class="w-full">
             <div class="relative rounded-2xl overflow-hidden shadow-xl bg-gray-900/5 aspect-video" style="min-height: 260px;">
-                <div class="absolute inset-0 flex items-center justify-center p-6">
-                    <div class="w-full h-full bg-gray-200/50 rounded-lg flex flex-col items-center justify-center text-center backdrop-blur-sm p-4">
-                        <div class="w-16 h-16 rounded-full bg-indigo-600/20 flex items-center justify-center text-indigo-600 mb-4">
-                             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-6.518-3.76A1 1 0 006 8.18v7.64a1 1 0 001.234.97l6.518-1.88a1 1 0 00.748-.97V12.14a1 1 0 00-.748-.972z" />
-                             </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800">[هنا فيديو تعريفي قصير عن AutoConfirm]</h3>
-                        <p class="mt-2 text-sm text-gray-600">شاهد عرض سريع يوضح ازاي AutoConfirm يقلل شغل خدمة العملاء ويزوّد معدلات التأكيد.</p>
-                    </div>
-                </div>
+                <!-- YouTube Embed -->
+                <iframe 
+                    class="absolute inset-0 w-full h-full" 
+                    src="https://www.youtube.com/embed/_lK4_A-b1tI" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </section>
