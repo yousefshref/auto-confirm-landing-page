@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoConfirm - خلي كل أوردر يتقفل في ثواني</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Cairo font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Apply Cairo font globally */
+        body, .font-cairo { 
+            font-family: 'Cairo', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; 
+        }
+        /* Simple smooth scroll for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="min-h-screen font-cairo bg-gradient-to-b from-gray-50 via-white to-gray-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="w-full px-6 py-6 flex items-center justify-between">
+        <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-indigo-600 to-pink-500 flex items-center justify-center shadow-lg">
+                <span class="text-white text-xl font-bold">AC</span>
+            </div>
+            <div>
+                <h1 class="text-lg font-extrabold text-gray-900">AutoConfirm</h1>
+                <p class="text-sm text-gray-600">خلي كل أوردر يتقفل في ثواني</p>
+            </div>
+        </div>
+        <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-block px-5 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-md hover:bg-indigo-700 transition-all duration-300">
+            ابدأ تجربتك
+        </a>
+    </header>
+
+    <!-- Hero -->
+    <section class="max-w-6xl mx-auto px-6 grid grid-cols-1 gap-10 items-center py-10 sm:py-16 bg-red-300">
+        
+        <!-- Hero Text Content -->
+        <div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight text-gray-900">وفر وقتك. اقفل طلباتك. زوّد أرباحك.</h2>
+            <p class="mt-6 text-gray-700 text-lg">AutoConfirm هي أسرع طريقة تخلي كل أوردر يتقفل في ثواني على واتساب.</p>
+
+            <ul class="mt-8 grid gap-4">
+                <li class="flex items-start gap-4">
+                    <div class="flex-none w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600 text-xl font-bold">✓</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">رسالة واتساب فورية بالعربي</h4>
+                        <p class="text-sm text-gray-600">أول ما العميل يطلب، توصله رسالة مؤدبة وواضحة فيها زرار تأكيد وزرار إلغاء.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div class="flex-none w-10 h-10 rounded-lg bg-pink-50 flex items-center justify-center text-pink-600 text-xl">⚡</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">تحديث حالة الأوردر بشكل لحظي</h4>
+                        <p class="text-sm text-gray-600">الرد من العميل بيغيّر حالة الأوردر تلقائي — خلاصنا صداع المتابعة.</p>
+                    </div>
+                </li>
+                <li class="flex items-start gap-4">
+                    <div class="flex-none w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center text-green-600 text-xl">🔁</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">متابعة أوتوماتيك للعملاء اللي ما ردوش</h4>
+                        <p class="text-sm text-gray-600">النظام يكلم العميل مرة واثنين لحد ما نعرف نيته بدون أي تعب منك.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="mt-10 flex gap-4 flex-wrap">
+                <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-md hover:bg-indigo-700 transition-all duration-300">
+                    ابدأ تجربتك
+                </a>
+                <a href="#features" class="px-6 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:shadow-sm hover:border-gray-300 transition-all duration-300">
+                    اعرف أكثر
+                </a>
+            </div>
+
+            <div class="mt-6 text-sm text-gray-500">
+                <strong>خلص وقت الشغل الروتيني — خلّي التيم يركز على العملاء الحقيقيين.</strong>
+            </div>
+        </div>
+
+        <!-- Video / VSL Placeholder -->
+        <div>
+            <div class="relative rounded-2xl overflow-hidden shadow-xl bg-gray-900/5 aspect-video" style="min-height: 260px;">
+                <div class="absolute inset-0 flex items-center justify-center p-6">
+                    <div class="w-full h-full bg-gray-200/50 rounded-lg flex flex-col items-center justify-center text-center backdrop-blur-sm p-4">
+                        <div class="w-16 h-16 rounded-full bg-indigo-600/20 flex items-center justify-center text-indigo-600 mb-4">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-6.518-3.76A1 1 0 006 8.18v7.64a1 1 0 001.234.97l6.518-1.88a1 1 0 00.748-.97V12.14a1 1 0 00-.748-.972z" />
+                             </svg>
+                        </div>
+                        <h3 class="text-lg font-semibold text-gray-800">[هنا فيديو تعريفي قصير عن AutoConfirm]</h3>
+                        <p class="mt-2 text-sm text-gray-600">شاهد عرض سريع يوضح ازاي AutoConfirm يقلل شغل خدمة العملاء ويزوّد معدلات التأكيد.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem section -->
+    <section id="problem" class="bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-16 sm:py-20">
+            <div class="max-w-3xl">
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900">المشكلة اللي بتنزف فلوسك كل يوم</h3>
+                <p class="mt-4 text-gray-700 text-lg">لو انت صاحب متجر في مصر أو الوطن العربي، فأكيد بتعاني من نفس الكابوس:</p>
+
+                <ul class="mt-6 space-y-3 text-gray-700 text-lg list-disc list-inside">
+                    <li>عملاء ما بيردوش على المكالمات</li>
+                    <li>أوردرات كتير بتتركن ومش بتتأكد</li>
+                    <li>تيم خدمة عملاء محروق على شغل روتيني</li>
+                    <li>أخطاء في إدخال البيانات بتسبب مشكلة مع شركات الشحن</li>
+                    <li>وحاجة دايما واقفة قصادك: ازاي أكمّل اسكيل؟</li>
+                </ul>
+
+                <p class="mt-8 text-gray-800 font-medium text-lg border-r-4 border-indigo-500 pr-4">
+                كل يوم بيمر من غير تأكيد سليم هو خسارة شغالة في الخلفية. كل مكالمة ما اتردش عليها هي فلوس بتروح على الأرض. وكل أوردر ملحقش يتأكد هو فرصة ضاعت من غير ما تحس.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="max-w-6xl mx-auto px-6 py-16 sm:py-20">
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900">ازاي AutoConfirm بيغيّر شكل يومك</h3>
+        <p class="mt-3 text-gray-700 text-lg max-w-2xl">AutoConfirm بيشيل من عليك أصعب وأكتر شغل ممل في تجارتك.</p>
+
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Feature cards will be dynamically inserted here by JS, or manually added -->
+            
+            <!-- Card 1 -->
+            <article class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                <div class="flex items-start gap-4">
+                    <div class="flex-none w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-2xl">💬</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">رسالة واتساب فورية بالعربي</h4>
+                        <p class="mt-2 text-sm text-gray-600">أول ما العميل يطلب، توصله رسالة مؤدبة وواضحة فيها زرار تأكيد وزرار إلغاء. من غير ما تفتح تليفون ولا تكلم حد.</p>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- Card 2 -->
+            <article class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                <div class="flex items-start gap-4">
+                    <div class="flex-none w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-2xl">⚡</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">تحديث حالة الأوردر بشكل لحظي</h4>
+                        <p class="mt-2 text-sm text-gray-600">الرد من العميل بيغيّر حالة الأوردر تلقائي. خلصنا صداع المتابعة.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                <div class="flex items-start gap-4">
+                    <div class="flex-none w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-2xl">🔁</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">متابعة أوتوماتيك للعملاء اللي ما ردوش</h4>
+                        <p class="mt-2 text-sm text-gray-600">لو العميل طنش. النظام يكلمه مرة واثنين لحد ما نعرف نيته.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                <div class="flex items-start gap-4">
+                    <div class="flex-none w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-2xl">🚚</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">ربط مباشر مع شركات الشحن</h4>
+                        <p class="mt-2 text-sm text-gray-600">أوردراتك المؤكدة تروح لبوسطة أو Mylerz أو Aramex أو Google Sheets جاهزة من غير غلطة واحدة.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                <div class="flex items-start gap-4">
+                    <div class="flex-none w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-2xl">📊</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">تقارير يومية وأسبوعية جاهزة</h4>
+                        <p class="mt-2 text-sm text-gray-600">تشوف كل حاجة من غير ما تطلب: عدد الأوردرات المؤكدة، اللي اتلغت، معدل رد العملاء، وتأثير الأداة على أرباحك.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="p-6 rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md">
+                <div class="flex items-start gap-4">
+                    <div class="flex-none w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 text-2xl">⏱️</div>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">وقت أقل للشغل الممل. فلوس أكتر.</h4>
+                        <p class="mt-2 text-sm text-gray-600">التيم يركّز على العميل الحقيقي. والشغل المكرر يبقى على AutoConfirm.</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-center px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-md hover:bg-indigo-700 transition-all duration-300">
+                احجز مكالمة توضيحية
+            </a>
+            <a href="#" class="w-full sm:w-auto text-center px-6 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:shadow-sm hover:border-gray-300 transition-all duration-300">
+                شاهد دليل التكاملات
+            </a>
+        </div>
+    </section>
+
+    <!-- Reports / Benefits -->
+    <section class="bg-gradient-to-r from-indigo-50 to-pink-50 py-16 sm:py-20">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+            <div class="md:col-span-1">
+                <h4 class="text-2xl font-extrabold text-gray-900">تقارير يومية وأسبوعية جاهزة</h4>
+                <p class="mt-3 text-gray-700 text-lg">تشوف عدد الأوردرات المؤكدة، اللي اتلغت، معدل رد العملاء، وتأثير الأداة على أرباحك بدون تعب.</p>
+            </div>
+            <div class="md:col-span-2">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-white/70 shadow-sm border border-gray-200/50 flex items-center gap-3">
+                        <span class="text-xl">✅</span>
+                        <div class="text-sm text-gray-700 font-medium">أوردرات مؤكدة</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/70 shadow-sm border border-gray-200/50 flex items-center gap-3">
+                        <span class="text-xl">❌</span>
+                        <div class="text-sm text-gray-700 font-medium">أوردرات ملغّية</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/70 shadow-sm border border-gray-200/50 flex items-center gap-3">
+                        <span class="text-xl">📈</span>
+                        <div class="text-sm text-gray-700 font-medium">معدل رد العملاء</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/70 shadow-sm border border-gray-200/50 flex items-center gap-3">
+                        <span class="text-xl">⏱️</span>
+                        <div class="text-sm text-gray-700 font-medium">وقت أقل للشغل الممل</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA strip -->
+    <section class="max-w-6xl mx-auto px-6 py-16 sm:py-24 text-center">
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-gray-900">تخيل يوم كامل من غير رنين تليفون ولا متابعة مزعجة</h3>
+        <p class="mt-3 text-gray-700 text-lg max-w-3xl mx-auto">تخيل كل أوردر يتأكد لوحده. وتخيل أرباحك وهي بتعلى لأنك قفلت فجوة كانت بتنزف منك طول السنين اللي فاتت.</p>
+
+        <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-3 rounded-xl bg-indigo-600 text-white font-semibold shadow-md hover:bg-indigo-700 transition-all duration-300">
+                اضغط هنا وابدأ تجربتك
+            </a>
+            <a href="#" class="w-full sm:w-auto px-8 py-3 rounded-xl border border-gray-200 text-gray-700 font-medium hover:shadow-sm hover:border-gray-300 transition-all duration-300">
+                اطلب عرض مخصص
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t bg-white border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-sm text-gray-600">
+                © <span id="current-year"></span> AutoConfirm — كل الحقوق محفوظة
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700">تواصل عبر واتساب</a>
+                <a href="#" class="text-sm text-gray-500 hover:text-gray-700">سياسة الخصوصية</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile sticky CTA -->
+    <div class="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-white via-white/90 to-white/0 sm:hidden">
+        <a href="https://wa.me/YOURNUMBER" target="_blank" rel="noopener noreferrer" class="block w-full text-center px-6 py-4 rounded-xl bg-indigo-600 text-white font-semibold shadow-lg hover:bg-indigo-700 transition-all duration-300">
+            ابدأ تجربتك
+        </a>
+    </div>
+
+    <!-- Simple JS to set the current year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
